@@ -1,0 +1,23 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FPS Arena Expanded</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<div id="lobby" class="screen">
+  <h1>FPS ARENA</h1>
+  <div class="panel">
+    <h2>Lobby</h2><input id="username" placeholder="Username" maxlength="16" value="Player">
+    <div class="row"><button id="daily">Daily Reward</button><button id="shop">Shop</button><button id="ranked">Ranked</button></div>
+    <p id="lobbyMsg">Choose your loadout, then start.</p>
+    <h3>Loadout (4 slots)</h3>
+    <div id="loadout"></div>
+    <button id="start">Start Match</button>
+  </div>
+</div>
+<div id="game" class="hidden">
+<canvas id="c"></canvas>
+<div id="hud"><span id="stats"></span><span id="weapon"></span><span id="timer"></span></div>
+<div id="cross">+</div><div id="cue"></div><div id="msg"></div>
+<div id="inv"></div>
+<div id="shopPanel" class="panel hidden"></div>
+</div>
+<script src="game.js"></script></body></html>
